@@ -15,7 +15,7 @@
   <li><a href="index.html">About</a></li>
 </ul>
 <div>
-<img src="cover.jpg" width="70%">
+<img src="cover.jpg" width="70%" class="center">
 </div>
 <div class="intro">
 	<p><strong>BAKY Proptech</strong> is a real estate firm which mainly focuses on developing luxury plots for residential and commercial purposes.This new firm is backed by a leadership team having over 25+ years of experience in plotted development at Bangalore,Karnataka. <strong>BAKY Proptech</strong> aims at providing premium, reliable and sustainable gated communities.</p>
@@ -87,6 +87,30 @@
 
 	</p>
 </div>
+<div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+</div>
 <div style="padding-top: 20px;text-align: center;">
 	<h2>Got queries ? </h2>
 	<form>
@@ -99,6 +123,7 @@
 
 </body>
 </html>
+
 
 
 
