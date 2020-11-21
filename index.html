@@ -7,13 +7,33 @@
 </head>
 <body>
 
-<ul>
-	<a href="index.html"><img src="logo.png" width="30%"></a>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="index.html">News</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="index.html">About</a></li>
-</ul>
+
+	<a href="index.html"><img src="logo.png" width="30%" class="center"></a>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	  <a href="home.html">Home</a>
+	  <a href="home.html">News</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="home.html">About</a>
+	</div>
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</div>
 <div>
 <img src="cover.jpg" width="70%" class="center">
 </div>
@@ -123,7 +143,4 @@
 
 </body>
 </html>
-
-
-
 
